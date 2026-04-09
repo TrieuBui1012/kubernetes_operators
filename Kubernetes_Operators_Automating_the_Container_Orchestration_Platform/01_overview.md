@@ -10,8 +10,8 @@
 
 ## 3. Cơ chế hoạt động của Operator
 - Operator hoạt động bằng cách mở rộng mặt phẳng điều khiển (control plane) và API của chính Kubernetes. Quá trình tạo và vận hành Operator dựa trên 2 thành phần:
-    - **Tài nguyên Tùy chỉnh (Kubernetes CRs):** Thông qua Custom Resource Definition (CRD), Operator định nghĩa một điểm cuối (endpoint) API mới để người dùng có thể thao tác bằng các công cụ chuẩn như `kubectl`,. CR lưu trữ trạng thái cấu hình mong muốn của ứng dụng.
-    - **Bộ điều khiển Tùy chỉnh (Custom Controllers):** Operator về cơ bản là một bộ điều khiển tùy chỉnh chạy trong một vòng lặp liên tục, chuyên theo dõi một loại CR cụ thể. Nó sẽ thực thi các hành động mang tính đặc thù của ứng dụng để đảm bảo trạng thái thực tế của hệ thống luôn khớp với những gì được khai báo trong CR.
+    - **Custom Resources - CRs:** Thông qua Custom Resource Definition (CRD), Operator định nghĩa một điểm cuối (endpoint) API mới để người dùng có thể thao tác bằng các công cụ chuẩn như `kubectl`,. CR lưu trữ trạng thái cấu hình mong muốn của ứng dụng.
+    - **Custom Controllers:** Operator về cơ bản là một bộ điều khiển tùy chỉnh chạy trong một vòng lặp liên tục, chuyên theo dõi một loại CR cụ thể. Nó sẽ thực thi các hành động mang tính đặc thù của ứng dụng để đảm bảo trạng thái thực tế của hệ thống luôn khớp với những gì được khai báo trong CR.
 
 ## 4. Ví dụ minh họa: etcd Operator
 - etcd là một cơ sở dữ liệu phân tán cần sự quản trị từ chuyên gia để xử lý việc thêm node, nâng cấp và sao lưu.
