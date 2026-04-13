@@ -1,0 +1,6 @@
+# Use the 'create api' subcommand to add watches to this file.
+- group: example.trieubui1012.com
+  version: v1
+  kind: VisitorApp
+  chart: helm-charts/visitorapp
+# +kubebuilder:scaffold:watch
