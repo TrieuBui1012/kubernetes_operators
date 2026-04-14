@@ -1,4 +1,4 @@
-# Tương tác giữa Operator và Kubernetes
+# Operators interact with Kubernetes
 
 ## 1. Operator trước hết là một thành phần làm việc với tài nguyên Kubernetes
 

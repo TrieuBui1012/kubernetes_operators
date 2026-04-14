@@ -1,18 +1,10 @@
-# Chương 4 – Developing an Operator with the Operator SDK
-
-> Ghi chú học tập cho **Chapter 4** của *The Kubernetes Operator Framework Book*.
->
-> Mục tiêu của chương: đi từ thiết kế ở chương 3 sang một Operator chạy được bằng Go + Operator SDK, gồm các bước: khởi tạo project, định nghĩa API/CRD, thêm manifests tài nguyên, viết control loop, và biết chỗ tra cứu khi gặp lỗi.
->
-> **Ghi chú về phạm vi:** file này bao phủ toàn bộ **commands xuất hiện trực tiếp trong chapter 4**, cùng với các **đoạn code/YAML quan trọng có giá trị học tập**. Với các đoạn generated boilerplate hoặc schema YAML quá dài, tôi giữ phần cốt lõi rồi giải thích ý nghĩa thay vì chép lại toàn bộ từng dòng lặp.
-
----
+# Developing an Operator with the Operator SDK
 
 ## 1. Ý chính cần ghi nhớ
 
-### 1.1. Chapter 4 đang dạy điều gì?
+### 1.1. Tổng quan
 
-Chương này hướng dẫn cách tạo một Operator cơ bản bằng **Operator SDK** theo hướng **Go-based operator**. Luồng chính của chương là:
+Hướng dẫn cách tạo một Operator cơ bản bằng **Operator SDK** theo hướng **Go-based operator**. Luồng chính của chương là:
 
 1. Dùng `operator-sdk init` để scaffold project.
 2. Dùng `operator-sdk create api` để tạo API type + controller skeleton.

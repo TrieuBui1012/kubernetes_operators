@@ -1,4 +1,4 @@
-# Chương 1 – Tóm tắt các ý chính quan trọng
+# Introducing the Operator Framework
 
 ## 1. Vì sao cần Operator Framework?
 
