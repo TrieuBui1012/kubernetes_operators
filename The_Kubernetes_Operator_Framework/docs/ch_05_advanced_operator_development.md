@@ -524,7 +524,7 @@ status:
 
 * `controller-runtime` đã có sẵn nhiều built-in metrics với prefix `controller_runtime_`.
 
-### Built-in metrics được sách nêu
+### Built-in metrics
 
 Trong package `sigs.k8s.io/controller-runtime/pkg/internal/controller/metrics` có 7 metrics Prometheus chính cho controller-runtime. Chúng dùng label `controller`, và riêng `controller_runtime_reconcile_total` có thêm label `result`.
 
